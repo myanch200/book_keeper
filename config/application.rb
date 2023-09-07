@@ -15,6 +15,7 @@ module BookKeeper
 
     # Please, see https://guides.rubyonrails.org/autoloading_and_reloading_constants.html#config-autoload-lib-ignore.
     config.autoload_lib(ignore: %w[assets tasks])
+    config.middleware.insert_after ActionDispatch::Static, Rack::Deflater
 
     # Configuration for the application, engines, and railties goes here.
     #

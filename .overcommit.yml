@@ -1,0 +1,21 @@
+PreCommit:
+  RuboCop:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: ignore
+
+  Fasterer:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: ignore
+
+PrePush:
+  Brakeman:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: ignore
+
+  Minitest:
+    enabled: true
+    on_warn: fail
+    problem_on_unmodified_line: fail

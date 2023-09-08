@@ -10,10 +10,9 @@ module User
     # end
 
     # POST /resource/sign_in
-    def create
-      flash[:alert] = 'Please confirm your email address.' unless current_user.confirmed? # rubocop:disable Rails/I18nLocaleTexts
-      super
-    end
+    # def create
+    #   super
+    # end
 
     # DELETE /resource/sign_out
     # def destroy
